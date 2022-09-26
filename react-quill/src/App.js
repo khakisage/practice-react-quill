@@ -1,8 +1,15 @@
 import './App.css';
-import { db } from './firebase';
+
+import Quill from './pages/Quill';
 
 function App() {
-  return <div className="App">{db._databaseId.projectId}</div>;
+  return (
+    <>
+      <Quill />
+    </>
+  );
 }
 
 export default App;
+
+// <div className="App">{db._databaseId.projectId}</div>;
